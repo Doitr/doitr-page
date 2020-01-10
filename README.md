@@ -1,2 +1,2 @@
 # doitr.github.io
-Test Sitte
+Site to demonstrate the differences between Flexbox and CSS Grid

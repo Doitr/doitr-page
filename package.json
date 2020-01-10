@@ -1,0 +1,19 @@
+{
+  "name": "doitr.github.io",
+  "version": "1.0.0",
+  "description": "Site to demonstrate the differences between Flexbox and CSS Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doitr/doitr.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doitr/doitr.github.io/issues"
+  },
+  "homepage": "https://github.com/Doitr/doitr.github.io#readme"
+}
