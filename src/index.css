@@ -7,14 +7,14 @@ body {
   margin: 0px;
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 0.2fr 0.1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr;
   grid-template-areas: 
     "header title header" 
-    ". navigation .";
+    ". navigation ."
+    ". container .";
 }
 
 .header {
-    width:;
      grid-column: 1/4;
      grid-row: 1/2; 
      background-color: black;
@@ -35,7 +35,11 @@ body {
     grid-column: 2/3;
     grid-row: 2/3;
     margin-top: 10px;
-    background-color: lightblue;
+    background-color: blue;
 }
 
-.container { grid-area: container; }
+.container { 
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: lightblue;
+}
