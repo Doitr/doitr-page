@@ -1,0 +1,24 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container * { 
+ border: 1px solid red;
+ position: relative;
+}
+
+.grid-container *:after { 
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas: "Header Header Header" ". container .";
+}
+
+.Header { grid-area: Header; }
+
+.container { grid-area: container; }
