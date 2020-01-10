@@ -1,16 +1,20 @@
-html, body, .grid-container { height: 100%; margin: 0; }
-
+body {
+    background-color: palegoldenrod;
+} 
 
 .grid-container {
+  height: 100%; 
+  margin: 0px;
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr;
   grid-template-areas: 
     "header title header" 
-    ". container .";
+    ". navigation .";
 }
 
 .header {
+    width:;
      grid-column: 1/4;
      grid-row: 1/2; 
      background-color: black;
@@ -21,12 +25,17 @@ html, body, .grid-container { height: 100%; margin: 0; }
 .title {
     grid-column: 2/3;
     grid-row: 1/2;
-
-    margin: 10px;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
     z-index: 2;
-
     background-color: yellow;
+}
+
+.navibar {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 10px;
+    background-color: lightblue;
 }
 
 .container { grid-area: container; }
