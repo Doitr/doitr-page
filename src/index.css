@@ -1,24 +1,32 @@
 html, body, .grid-container { height: 100%; margin: 0; }
 
-.grid-container * { 
- border: 1px solid red;
- position: relative;
-}
-
-.grid-container *:after { 
- content:attr(class);
- position: absolute;
- top: 0;
- left: 0;
-}
 
 .grid-container {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 0.2fr 1fr;
-  grid-template-areas: "Header Header Header" ". container .";
+  grid-template-areas: 
+    "header title header" 
+    ". container .";
 }
 
-.Header { grid-area: Header; }
+.header {
+     grid-column: 1/4;
+     grid-row: 1/2; 
+     background-color: black;
+
+     z-index: 1;
+}
+
+.title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    margin: 10px;
+
+    z-index: 2;
+
+    background-color: yellow;
+}
 
 .container { grid-area: container; }
