@@ -2,7 +2,7 @@
   "name": "doitr.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://doitr.github.io",
+  "homepage": "https://doitr.github.io/doitr-page/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
